@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarberCut - Estilo & Precisión</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="top-bar">
+      <div class="search-box">
+        <input type="text" placeholder="Buscar servicio...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="logo-container">
+        <a href="#">
+          <img src="imagenes/Barbercut.png" alt="BarberCut Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span style="display:none;">BARBERCUT</span>
+        </a>
+      </div>
+
+      <div class="user-actions">
+        <a href="#">CREAR CUENTA</a>
+        <span class="divider">|</span>
+        <a href="#" class="btn-login-outline">INICIAR SESIÓN</a>
+      </div>
+
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <nav class="nav-menu" id="nav-menu">
+    <ul>
+      <li><a href="#" class="active">INICIO</a></li>
+      <li><a href="#servicios">SERVICIOS</a></li>
+      <li><a href="#precios">PRECIOS</a></li>
+      <li><a href="#galeria">GALERÍA</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <main class="hero-section">
+    <div class="hero-content">
+      <span class="hero-badge">Experiencia Premium</span>
+      <h1>Estilo y precisión en cada corte</h1>
+      <p>RESERVÁ TU TURNO Y VIVÍ LA EXPERIENCIA BARBERCUT</p>
+      <a href="#precios" class="btn-main">
+        <span>Reservar Turno Ahora</span>
+        <i class="fa-solid fa-calendar-check"></i>
+      </a>
+    </div>
+  </main>
+
+  <section class="section-alt" id="servicios">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-subtitle">Calidad, higiene y la atención personalizada que te mereces</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon-wrapper">
+            <i class="fa-solid fa-scissors card-icon"></i>
+          </div>
+          <h3>Corte Clásico y Urbano</h3>
+          <p>Técnicas tradicionales y modernas adaptadas a tu estilo personal con un acabado imponente.</p>
+          <button class="btn-secondary">Más información</button>
+        </div>
+
+        <div class="card">
+          <div class="card-icon-wrapper">
+            <i class="fa-solid fa-user-ninja card-icon"></i>
+          </div>
+          <h3>Perfilado de Barba</h3>
+          <p>Diseño, recortado y perfilado con toalla caliente y aceites para un cuidado máximo de tu piel.</p>
+          <button class="btn-secondary">Más información</button>
+        </div>
+
+        <div class="card">
+          <div class="card-icon-wrapper">
+            <i class="fa-solid fa-spray-can card-icon"></i>
+          </div>
+          <h3>Tratamientos Capilares</h3>
+          <p>Lavado premium, nutrición e hidratación profunda para mantener un cabello fuerte y saludable.</p>
+          <button class="btn-secondary">Más información</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light" id="precios">
+    <div class="container">
+      <h2 class="section-title">Lista de Precios</h2>
+      <p class="section-subtitle">Precios transparentes sin costos ocultos</p>
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Descripción</th>
+              <th>Duración</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Corte de Cabello</strong></td>
+              <td>Corte completo + lavado y peinado profesional</td>
+              <td>40 min</td>
+              <td><span class="price-tag">$8.000</span></td>
+            </tr>
+            <tr>
+              <td><strong>Barba Completa</strong></td>
+              <td>Perfilado + tratamiento de toalla caliente y aceites</td>
+              <td>30 min</td>
+              <td><span class="price-tag">$5.500</span></td>
+            </tr>
+            <tr>
+              <td><strong>Combo BarberCut</strong></td>
+              <td>Corte de cabello completo + perfilado de barba</td>
+              <td>60 min</td>
+              <td><span class="price-tag">$12.000</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="center-btn">
+        <a href="https://wa.me/5493518206776" target="_blank" class="btn-main">
+          <span>Reservar turno online</span> 💈
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="galeria">
+    <div class="container">
+      <h2 class="section-title">Nuestra Galería</h2>
+      <p class="section-subtitle">Un vistazo a algunos de nuestros mejores trabajos</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="imagenes/Corte1.png" alt="Corte Urbano BarberCut" onerror="this.src='https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=600&auto=format&fit=crop'">
+          <div class="gallery-overlay">Fade Urbano</div>
+        </div>
+        <div class="gallery-item">
+          <img src="imagenes/Corte2.png" alt="Perfilado de Barba BarberCut" onerror="this.src='https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=600&auto=format&fit=crop'">
+          <div class="gallery-overlay">Cuidado de Barba</div>
+        </div>
+        <div class="gallery-item">
+          <img src="imagenes/Corte3.png" alt="Corte Clásico BarberCut" onerror="this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=600&auto=format&fit=crop'">
+          <div class="gallery-overlay">Estilo Clásico</div>
+        </div>
+        <div class="gallery-item">
+          <img src="imagenes/Corte4.png" alt="Peinado BarberCut" onerror="this.src='https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=600&auto=format&fit=crop'">
+          <div class="gallery-overlay">Texturizado</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light" id="contacto">
+    <div class="container">
+      <h2 class="section-title">Contacto y Reservas</h2>
+      <p class="section-subtitle">¿Tenes alguna consulta o querés visitarnos?</p>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Datos de Contacto</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Rafael Núñez 3055 – CP: X5000 – Córdoba, Argentina</p>
+          <p><i class="fa-solid fa-phone"></i> 0800 555 2869 (Lun a Vie de 9hs a 17hs)</p>
+          <p><i class="fa-brands fa-whatsapp"></i> +54 9 351 820-6776 / +54 9 351 298-3469</p>
+          <p><i class="fa-solid fa-envelope"></i> consultas@barbercut.com</p>
+          
+          <div class="social-inline">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/ttomasfonseca_/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Gracias por enviar tu mensaje! Nos pondremos en contacto a la brevedad.');">
+          <h3>Envianos tu consulta</h3>
+          <div class="form-group">
+            <input type="text" placeholder="Nombre completo" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <textarea rows="4" placeholder="Escribí tu mensaje..." required></textarea>
+          </div>
+          <button type="submit" class="btn-main" style="width: 100%;">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          BarberCut
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/ttomasfonseca_/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <p style="margin-bottom: 12px;">
+          BarberCut. Fundado el 21 de septiembre de 2023. Domicilio legal: Rafael Nuñez 3055 – CP: X5000 – Córdoba, Argentina. Propietario: BarberCut SA. Gerente General: Valentin Uriel Nuñez. Director: Tomas Maximiliano Fonseca Loza. Editor: Samuel Emerson Paul Plasencia Miñope.
+        </p>
+        <p>
+          © 2023 - 2026 BarberCut Todos los derechos reservados. <a href="#">Aviso legal</a> | <a href="#">Política de privacidad</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5493518206776" class="floating-btn" target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const header = document.getElementById('header');
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    hamburgerBtn.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
